@@ -1,0 +1,239 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Ticketing;
+    src: url(./Fonts/Ticketing.ttf);
+}
+
+body {
+    background-color: orange;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 0 15px #222222;
+    border-radius: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+main h1 {
+    margin: 30px auto;
+    color: #222222;
+}
+
+.menu h2 {
+    margin: auto 20px;
+    font-size: 20px;
+}
+
+.combos {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.combo {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.active {
+    box-shadow: 0 0 10px teal;
+}
+
+.combo input {
+    transform: scale(1.2);
+    margin: 10px auto 20px auto;
+}
+
+.combo h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.combo ul {
+    font-size: 14px;
+}
+
+.combo h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.producto:hover{
+    background-color: #2222222a;
+}
+
+.active-product {
+    background-color: #222222;
+    color: white;
+}
+
+.producto input{
+    align-self: center;
+}
+
+.producto h4 {
+    font-size: 16px;
+    align-self: flex-end;
+    margin: auto 10px;
+}
+
+.producto h5 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+}
+
+.producto input:hover {
+    cursor: pointer;
+}
+
+.comentarios {
+    padding: 10px;
+}
+
+.tipo-comentario{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #222222;
+    padding: 10px;
+    color: #222222;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.total h3{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.total input {
+    padding: 10px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.enviar {
+    width: 30%;
+}
+
+.recibo-div{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #2222222a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recibo {
+    background: url(./fondo-recibo.jpg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90vh;
+    font-family: Ticketing;
+}
+
+.recibo > h1 {
+    font-size: 25px;
+}
+
+.recibo > h2 {
+    font-size: 18px;
+}
+
+.recibo hr {
+    width: 100%;
+    border: 1px dashed black;
+}
+
+.recibo .td {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.recibo .td h3 {
+    font-size: 16px;
+}
+
+.recibo .td h4 {
+    font-size: 15px;
+}
+
+.productos-recibo {
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.total-recibo {
+    width: 100%;
+}
+
+.recibo .codigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-self: baseline;
+}
+
+.recibo .codigo img {
+    height: 50%;
+    width: 50%;
+}
+
+.hidden {
+    display: none;
+}

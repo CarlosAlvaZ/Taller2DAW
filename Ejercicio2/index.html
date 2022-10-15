@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>Menú Restaurante Online || Ejericio #2 | Taller #2</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Seleccione su pedido</h1>
+
+        <div class="menu">
+
+            <h2>Combos:</h2>
+            <hr>
+            <div class="combos">
+                <div class="combo">
+                    <input type="radio" name="combo" value="super" id="super" checked>
+                    <h2>Super Combo</h2>
+                    <ul>
+                        <li>3 Piezas de Pollo.</li>
+                        <li>1 Ensalada.</li>
+                        <li>Papas Fritas.</li>
+                        <li>1 Bebida Grande.</li>
+                    </ul>
+                    <h3>Precio: <strong>$7.25</strong></h3>
+                </div>
+
+                <div class="combo">
+                    <input type="radio" name="combo" value="personal" id="personal">
+                    <h2>Combo Personal</h2>
+                    <ul>
+                        <li>2 Piezas de Pollo.</li>
+                        <li>Papas Fritas.</li>
+                        <li>1 Bebida Mediana.</li>
+                    </ul>
+                    <h3>Precio: <strong>$5.75</strong></h3>
+                </div>
+
+                <div class="combo">
+                    <input type="radio" name="combo" value="infantil" id="infantil">
+                    <h2>Combo Infantil</h2>
+                    <ul>
+                        <li>1 Pieza de Pollo.</li>
+                        <li>Papas Fritas.</li>
+                        <li>1 Bebida Pequeña.</li>
+                    </ul>
+                    <h3>Precio: <strong>$3.50</strong></h3>
+                </div>
+
+            </div>
+
+            <h2>Productos</h2>
+            <hr>
+            <div class="productos">
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="1">
+                    <h4>Ensalada</h4>
+                    <h5>$1.50</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="2">
+                    <h4>Papa Frita</h4>
+                    <h5>$1.20</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="3">
+                    <h4>Pieza de pollo grande</h4>
+                    <h5>$1.75</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="4">
+                    <h4>Pieza de pollo mediana</h4>
+                    <h5>$1.50</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="5">
+                    <h4>Pieza de pollo pequeña</h4>
+                    <h5>$1.25</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="6">
+                    <h4>Bebida grande</h4>
+                    <h5>$1.50</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="7">
+                    <h4>Bebida mediana</h4>
+                    <h5>$1.25</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="8">
+                    <h4>Bebida pequeña</h4>
+                    <h5>$1.00</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="9">
+                    <h4>Café</h4>
+                    <h5>$0.50</h5>
+                </div>
+
+                <div class="producto">
+                    <input type="checkbox" class="checkbox" value="10">
+                    <h4>Postre</h4>
+                    <h5>$1.25</h5>
+                </div>
+
+            </div>
+
+            <h2>Añadir comentarios a su orden:</h2>
+            <hr>
+            <div class="comentarios">
+                <div class="tipo-comentario comentario-target">
+                    Agregue un comentario.
+                </div>
+                <textarea name="comentario" class="tipo-comentario comentario-input hidden"></textarea>
+            </div>
+            
+            <hr>
+            <div class="total">
+                <h3>Total a pagar: </h3>
+                <input type="text" class="total-target" readonly placeholder="$0.00">
+            </div>
+
+            <div class="boton">
+                <button class="btn btn-success enviar">Enviar Orden</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="recibo-div hidden">
+
+        <template class="template-recibo">
+            <div class="recibo">
+        
+                <h1>Recibo de Pago</h1>
+                <h2>Restaurante Online</h2>
+        
+                <hr>
+        
+                <div class="td">
+                    <h3>Dirección:</h3>
+                    <h4>San Salvador, El Salvador.</h4>
+                </div>
+                <div class="td">
+                    <h3>Tel:</h3>
+                    <h4>2222 2222</h4>
+                </div>
+                <div class="td recipt-date">
+                    <h3>Fecha:</h3>
+                    <!-- <h4>MM/DD/AA</h4> -->
+                </div>
+        
+                <hr>
+        
+                <div class="productos-recibo">
+                    <div class="td productos-recibo-titulo">
+                        <h3><strong> Producto: </strong></h3>
+                        <h4><strong> Precio: </strong></h4>
+                    </div>
+                </div>
+        
+                <hr>
+        
+                <div class="total-recibo">
+                    <div class="td">
+                        <h3>Total:</h3>
+                        <!-- <h4>$0.00</h4> -->
+                    </div>
+                </div>
+        
+                <div class="codigo">
+                    <img src="./codigo.png" alt="Codigo de Barras">
+                </div>
+            </div>
+        </template>
+
+    </div>
+
+    
+</body>
+</html>
